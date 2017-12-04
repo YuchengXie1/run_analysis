@@ -1,0 +1,85 @@
+shape of data
+
+The data set shape is contains 10299 rows and 74 columns.
+
+the data has 10299 unique observations and contains the following columns
+
+1 "activity"	factor
+2 "tBodyAccMeanX"	numeric
+3 "tBodyAccMeanY"	numeric
+4 "tBodyAccMeanZ"	numeric
+5 "tBodyAccStdX"	numeric
+6 "tBodyAccStdY"	numeric
+7 "tBodyAccStdZ"	numeric
+8 "tGravityAccMeanX"	numeric
+9 "tGravityAccMeanY"	numeric
+10 "tGravityAccMeanZ"	numeric
+11 "tGravityAccStdX"	numeric
+12 "tGravityAccStdY"	numeric
+13 "tGravityAccStdZ"	numeric
+14 "tBodyAccJerkMeanX"	numeric
+15 "tBodyAccJerkMeanY"	numeric
+16 "tBodyAccJerkMeanZ"	numeric
+17 "tBodyAccJerkStdX"	numeric
+18 "tBodyAccJerkStdY"	numeric
+19 "tBodyAccJerkStdZ"	numeric
+20 "tBodyGyroMeanX"	numeric
+21 "tBodyGyroMeanY"	numeric
+22 "tBodyGyroMeanZ"	numeric
+23 "tBodyGyroStdX"	numeric
+24 "tBodyGyroStdY"	numeric
+25 "tBodyGyroStdZ"	numeric
+26 "tBodyGyroJerkMeanX"	numeric
+27 "tBodyGyroJerkMeanY"	numeric
+28 "tBodyGyroJerkMeanZ"	numeric
+29 "tBodyGyroJerkStdX"	numeric
+30 "tBodyGyroJerkStdY"	numeric
+31 "tBodyGyroJerkStdZ"	numeric
+32 "tBodyAccMagMean"	numeric
+33 "tBodyAccMagStd"	numeric
+34 "tGravityAccMagMean"	numeric
+35 "tGravityAccMagStd"	numeric
+36 "tBodyAccJerkMagMean"	numeric
+37 "tBodyAccJerkMagStd"	numeric
+38 "tBodyGyroMagMean"	numeric
+39 "tBodyGyroMagStd"	numeric
+40 "tBodyGyroJerkMagMean"	numeric
+41 "tBodyGyroJerkMagStd"	numeric
+42 "fBodyAccMeanX"	numeric
+43 "fBodyAccMeanY"	numeric
+44 "fBodyAccMeanZ"	numeric
+45 "fBodyAccStdX"	numeric
+46 "fBodyAccStdY"	numeric
+47 "fBodyAccStdZ"	numeric
+48 "fBodyAccJerkMeanX"	numeric
+49 "fBodyAccJerkMeanY"	numeric
+50 "fBodyAccJerkMeanZ"	numeric
+51 "fBodyAccJerkStdX"	numeric
+52 "fBodyAccJerkStdY"	numeric
+53 "fBodyAccJerkStdZ"	numeric
+54 "fBodyGyroMeanX"	numeric
+55 "fBodyGyroMeanY"	numeric
+56 "fBodyGyroMeanZ"	numeric
+57 "fBodyGyroStdX"	numeric
+58 "fBodyGyroStdY"	numeric
+59 "fBodyGyroStdZ"	numeric
+60 "fBodyAccMagMean"	numeric
+61 "fBodyAccMagStd"	numeric
+62 "fBodyBodyAccJerkMagMean"	numeric
+63 "fBodyBodyAccJerkMagStd"	numeric
+64 "fBodyBodyGyroMagMean"	numeric
+65 "fBodyBodyGyroMagStd"	numeric
+66 "fBodyBodyGyroJerkMagMean"	numeric
+67 "fBodyBodyGyroJerkMagStd"	numeric
+68 "angletBodyAccMean	numeric
+69 "angletBodyAccJerkMean	numeric
+70 "angletBodyGyroMean	numeric
+71 "angletBodyGyroJerkMean	numeric
+72 "angleX	numeric
+73 "angleY	numeric
+74 "angleZ	numeric
+
+
+activity names contains:
+ "LAYING"             "SITTING"            "STANDING"           "WALKING"           
+"WALKING_DOWNSTAIRS" "WALKING_UPSTAIRS"  
