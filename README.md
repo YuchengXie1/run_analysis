@@ -1,6 +1,13 @@
-##download the file in the website
-##unpacked the file
-##save the uncompressed filefold "UCI HAR Dataset" in D sector
-##run the code
-##find the output in D sector
-##note: my working directory is "D//", I directly save the files on "D://",if you want to check the code, please save the file folder "UCI HAR Dataset" in "D://"
+download the file in the website
+unpacked the file
+save the uncompressed filefold "UCI HAR Dataset" in working directory
+run the code
+find the output in D sector
+
+
+What this code do:
+Merges the training and the test sets to create one data set.
+Extracts only the measurements on the mean and standard deviation for each measurement.
+Uses descriptive activity names to name the activities in the data set
+Appropriately labels the data set with descriptive variable names.
+From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
