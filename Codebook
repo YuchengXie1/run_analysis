@@ -1,85 +1,267 @@
+the content of the dataset is the average of each variable(measurement) for each activity and each subject
+
+data name : tidy data
 shape of data
 
-The data set shape is contains 10299 rows and 74 columns.
-
-the data has 10299 unique observations and contains the following columns
-
-1 "activity"	factor
-2 "tBodyAccMeanX"	numeric
-3 "tBodyAccMeanY"	numeric
-4 "tBodyAccMeanZ"	numeric
-5 "tBodyAccStdX"	numeric
-6 "tBodyAccStdY"	numeric
-7 "tBodyAccStdZ"	numeric
-8 "tGravityAccMeanX"	numeric
-9 "tGravityAccMeanY"	numeric
-10 "tGravityAccMeanZ"	numeric
-11 "tGravityAccStdX"	numeric
-12 "tGravityAccStdY"	numeric
-13 "tGravityAccStdZ"	numeric
-14 "tBodyAccJerkMeanX"	numeric
-15 "tBodyAccJerkMeanY"	numeric
-16 "tBodyAccJerkMeanZ"	numeric
-17 "tBodyAccJerkStdX"	numeric
-18 "tBodyAccJerkStdY"	numeric
-19 "tBodyAccJerkStdZ"	numeric
-20 "tBodyGyroMeanX"	numeric
-21 "tBodyGyroMeanY"	numeric
-22 "tBodyGyroMeanZ"	numeric
-23 "tBodyGyroStdX"	numeric
-24 "tBodyGyroStdY"	numeric
-25 "tBodyGyroStdZ"	numeric
-26 "tBodyGyroJerkMeanX"	numeric
-27 "tBodyGyroJerkMeanY"	numeric
-28 "tBodyGyroJerkMeanZ"	numeric
-29 "tBodyGyroJerkStdX"	numeric
-30 "tBodyGyroJerkStdY"	numeric
-31 "tBodyGyroJerkStdZ"	numeric
-32 "tBodyAccMagMean"	numeric
-33 "tBodyAccMagStd"	numeric
-34 "tGravityAccMagMean"	numeric
-35 "tGravityAccMagStd"	numeric
-36 "tBodyAccJerkMagMean"	numeric
-37 "tBodyAccJerkMagStd"	numeric
-38 "tBodyGyroMagMean"	numeric
-39 "tBodyGyroMagStd"	numeric
-40 "tBodyGyroJerkMagMean"	numeric
-41 "tBodyGyroJerkMagStd"	numeric
-42 "fBodyAccMeanX"	numeric
-43 "fBodyAccMeanY"	numeric
-44 "fBodyAccMeanZ"	numeric
-45 "fBodyAccStdX"	numeric
-46 "fBodyAccStdY"	numeric
-47 "fBodyAccStdZ"	numeric
-48 "fBodyAccJerkMeanX"	numeric
-49 "fBodyAccJerkMeanY"	numeric
-50 "fBodyAccJerkMeanZ"	numeric
-51 "fBodyAccJerkStdX"	numeric
-52 "fBodyAccJerkStdY"	numeric
-53 "fBodyAccJerkStdZ"	numeric
-54 "fBodyGyroMeanX"	numeric
-55 "fBodyGyroMeanY"	numeric
-56 "fBodyGyroMeanZ"	numeric
-57 "fBodyGyroStdX"	numeric
-58 "fBodyGyroStdY"	numeric
-59 "fBodyGyroStdZ"	numeric
-60 "fBodyAccMagMean"	numeric
-61 "fBodyAccMagStd"	numeric
-62 "fBodyBodyAccJerkMagMean"	numeric
-63 "fBodyBodyAccJerkMagStd"	numeric
-64 "fBodyBodyGyroMagMean"	numeric
-65 "fBodyBodyGyroMagStd"	numeric
-66 "fBodyBodyGyroJerkMagMean"	numeric
-67 "fBodyBodyGyroJerkMagStd"	numeric
-68 "angletBodyAccMean	numeric
-69 "angletBodyAccJerkMean	numeric
-70 "angletBodyGyroMean	numeric
-71 "angletBodyGyroJerkMean	numeric
-72 "angleX	numeric
-73 "angleY	numeric
-74 "angleZ	numeric
+The data set shape is contains 73 rows and 180 columns.
+each row represent a kind of measurement
+each colomn represent a combination of subject and activity
 
 
-activity names contains:
- "LAYING"             "SITTING"            "STANDING"           "WALKING"           
-"WALKING_DOWNSTAIRS" "WALKING_UPSTAIRS"  
+measurement(rownames) listed below:
+"tBodyAccMeanX"
+"tBodyAccMeanY"
+"tBodyAccMeanZ"
+"tBodyAccStdX"
+"tBodyAccStdY"
+"tBodyAccStdZ"
+"tGravityAccMeanX"
+"tGravityAccMeanY"
+"tGravityAccMeanZ"
+"tGravityAccStdX"
+"tGravityAccStdY"
+"tGravityAccStdZ"
+"tBodyAccJerkMeanX"
+"tBodyAccJerkMeanY"
+"tBodyAccJerkMeanZ"
+"tBodyAccJerkStdX"
+"tBodyAccJerkStdY"
+"tBodyAccJerkStdZ"
+"tBodyGyroMeanX"
+"tBodyGyroMeanY"
+"tBodyGyroMeanZ"
+"tBodyGyroStdX"
+"tBodyGyroStdY"
+"tBodyGyroStdZ"
+"tBodyGyroJerkMeanX"
+"tBodyGyroJerkMeanY"
+"tBodyGyroJerkMeanZ"
+"tBodyGyroJerkStdX"
+"tBodyGyroJerkStdY"
+"tBodyGyroJerkStdZ"
+"tBodyAccMagMean"
+"tBodyAccMagStd"
+"tGravityAccMagMean"
+"tGravityAccMagStd"
+"tBodyAccJerkMagMean"
+"tBodyAccJerkMagStd"
+"tBodyGyroMagMean"
+"tBodyGyroMagStd"
+"tBodyGyroJerkMagMean"
+"tBodyGyroJerkMagStd"
+"fBodyAccMeanX"
+"fBodyAccMeanY"
+"fBodyAccMeanZ"
+"fBodyAccStdX"
+"fBodyAccStdY"
+"fBodyAccStdZ"
+"fBodyAccJerkMeanX"
+"fBodyAccJerkMeanY"
+"fBodyAccJerkMeanZ"
+"fBodyAccJerkStdX"
+"fBodyAccJerkStdY"
+"fBodyAccJerkStdZ"
+"fBodyGyroMeanX"
+"fBodyGyroMeanY"
+"fBodyGyroMeanZ"
+"fBodyGyroStdX"
+"fBodyGyroStdY"
+"fBodyGyroStdZ"
+"fBodyAccMagMean"
+"fBodyAccMagStd"
+"fBodyBodyAccJerkMagMean"
+"fBodyBodyAccJerkMagStd"
+"fBodyBodyGyroMagMean"
+"fBodyBodyGyroMagStd"
+"fBodyBodyGyroJerkMagMean"
+"fBodyBodyGyroJerkMagStd"
+"angletBodyAccMean,gravity"
+"angletBodyAccJerkMean,gravityMean"
+"angletBodyGyroMean,gravityMean"
+"angletBodyGyroJerkMean,gravityMean"
+"angleX,gravityMean"
+"angleY,gravityMean"
+"angleZ,gravityMean"
+
+
+combination of subject and activity listed below:
+"LAYING.1"
+"SITTING.1"
+"STANDING.1"
+"WALKING.1"
+"WALKING_DOWNSTAIRS.1"
+"WALKING_UPSTAIRS.1"
+"LAYING.2"
+"SITTING.2"
+"STANDING.2"
+"WALKING.2"
+"WALKING_DOWNSTAIRS.2"
+"WALKING_UPSTAIRS.2"
+"LAYING.3"
+"SITTING.3"
+"STANDING.3"
+"WALKING.3"
+"WALKING_DOWNSTAIRS.3"
+"WALKING_UPSTAIRS.3"
+"LAYING.4"
+"SITTING.4"
+"STANDING.4"
+"WALKING.4"
+"WALKING_DOWNSTAIRS.4"
+"WALKING_UPSTAIRS.4"
+"LAYING.5"
+"SITTING.5"
+"STANDING.5"
+"WALKING.5"
+"WALKING_DOWNSTAIRS.5"
+"WALKING_UPSTAIRS.5"
+"LAYING.6"
+"SITTING.6"
+"STANDING.6"
+"WALKING.6"
+"WALKING_DOWNSTAIRS.6"
+"WALKING_UPSTAIRS.6"
+"LAYING.7"
+"SITTING.7"
+"STANDING.7"
+"WALKING.7"
+"WALKING_DOWNSTAIRS.7"
+"WALKING_UPSTAIRS.7"
+"LAYING.8"
+"SITTING.8"
+"STANDING.8"
+"WALKING.8"
+"WALKING_DOWNSTAIRS.8"
+"WALKING_UPSTAIRS.8"
+"LAYING.9"
+"SITTING.9"
+"STANDING.9"
+"WALKING.9"
+"WALKING_DOWNSTAIRS.9"
+"WALKING_UPSTAIRS.9"
+"LAYING.10"
+"SITTING.10"
+"STANDING.10"
+"WALKING.10"
+"WALKING_DOWNSTAIRS.10"
+"WALKING_UPSTAIRS.10"
+"LAYING.11"
+"SITTING.11"
+"STANDING.11"
+"WALKING.11"
+"WALKING_DOWNSTAIRS.11"
+"WALKING_UPSTAIRS.11"
+"LAYING.12"
+"SITTING.12"
+"STANDING.12"
+"WALKING.12"
+"WALKING_DOWNSTAIRS.12"
+"WALKING_UPSTAIRS.12"
+"LAYING.13"
+"SITTING.13"
+"STANDING.13"
+"WALKING.13"
+"WALKING_DOWNSTAIRS.13"
+"WALKING_UPSTAIRS.13"
+"LAYING.14"
+"SITTING.14"
+"STANDING.14"
+"WALKING.14"
+"WALKING_DOWNSTAIRS.14"
+"WALKING_UPSTAIRS.14"
+"LAYING.15"
+"SITTING.15"
+"STANDING.15"
+"WALKING.15"
+"WALKING_DOWNSTAIRS.15"
+"WALKING_UPSTAIRS.15"
+"LAYING.16"
+"SITTING.16"
+"STANDING.16"
+"WALKING.16"
+"WALKING_DOWNSTAIRS.16"
+"WALKING_UPSTAIRS.16"
+"LAYING.17"
+"SITTING.17"
+"STANDING.17"
+"WALKING.17"
+"WALKING_DOWNSTAIRS.17"
+"WALKING_UPSTAIRS.17"
+"LAYING.18"
+"SITTING.18"
+"STANDING.18"
+"WALKING.18"
+"WALKING_DOWNSTAIRS.18"
+"WALKING_UPSTAIRS.18"
+"LAYING.19"
+"SITTING.19"
+"STANDING.19"
+"WALKING.19"
+"WALKING_DOWNSTAIRS.19"
+"WALKING_UPSTAIRS.19"
+"LAYING.20"
+"SITTING.20"
+"STANDING.20"
+"WALKING.20"
+"WALKING_DOWNSTAIRS.20"
+"WALKING_UPSTAIRS.20"
+"LAYING.21"
+"SITTING.21"
+"STANDING.21"
+"WALKING.21"
+"WALKING_DOWNSTAIRS.21"
+"WALKING_UPSTAIRS.21"
+"LAYING.22"
+"SITTING.22"
+"STANDING.22"
+"WALKING.22"
+"WALKING_DOWNSTAIRS.22"
+"WALKING_UPSTAIRS.22"
+"LAYING.23"
+"SITTING.23"
+"STANDING.23"
+"WALKING.23"
+"WALKING_DOWNSTAIRS.23"
+"WALKING_UPSTAIRS.23"
+"LAYING.24"
+"SITTING.24"
+"STANDING.24"
+"WALKING.24"
+"WALKING_DOWNSTAIRS.24"
+"WALKING_UPSTAIRS.24"
+"LAYING.25"
+"SITTING.25"
+"STANDING.25"
+"WALKING.25"
+"WALKING_DOWNSTAIRS.25"
+"WALKING_UPSTAIRS.25"
+"LAYING.26"
+"SITTING.26"
+"STANDING.26"
+"WALKING.26"
+"WALKING_DOWNSTAIRS.26"
+"WALKING_UPSTAIRS.26"
+"LAYING.27"
+"SITTING.27"
+"STANDING.27"
+"WALKING.27"
+"WALKING_DOWNSTAIRS.27"
+"WALKING_UPSTAIRS.27"
+"LAYING.28"
+"SITTING.28"
+"STANDING.28"
+"WALKING.28"
+"WALKING_DOWNSTAIRS.28"
+"WALKING_UPSTAIRS.28"
+"LAYING.29"
+"SITTING.29"
+"STANDING.29"
+"WALKING.29"
+"WALKING_DOWNSTAIRS.29"
+"WALKING_UPSTAIRS.29"
+"LAYING.30"
+"SITTING.30"
+"STANDING.30"
+"WALKING.30"
+"WALKING_DOWNSTAIRS.30"
+"WALKING_UPSTAIRS.30"
