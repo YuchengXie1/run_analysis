@@ -2,7 +2,7 @@ download the file in the website
 unpacked the file
 save the uncompressed filefold "UCI HAR Dataset" in working directory
 run the code
-find the output in D sector
+find the output in working directory
 
 
 What this code do:
